@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noah W - Personal Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1f1f1f;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: #333;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #fff;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            transition: all 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffd700;
+        }
+
+        section {
+            padding: 50px 0;
+        }
+
+        #hero {
+            background-image: url('hero-image.jpg'); /* Add your hero image path here */
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        #hero h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        #hero p {
+            font-size: 18px;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        footer {
+            background-color: #333;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            clear: both;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .fadeIn {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .slideInRight {
+            animation: slideInRight 1s ease-in-out;
+        }
+
+        @keyframes scaleIn {
+            from {
+                transform: scale(0);
+            }
+            to {
+                transform: scale(1);
+            }
+        }
+
+        .scaleIn {
+            animation: scaleIn 1s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Your Name</h1>
+            <nav>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#hobbies">Hobbies</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#youtube">YouTube</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero" class="fadeIn">
+        <div class="container">
+            <h2>Welcome to My Personal Website</h2>
+            <p>Explore my hobbies, favorite games, projects, and more!</p>
+        </div>
+    </section>
+
+    <section id="hobbies" class="slideInRight">
+        <div class="container">
+            <h2>Hobbies</h2>
+            <p>Here are some of my hobbies:</p>
+            <ul>
+                <li>Gaming</li>
+                <li>Basketball</li>
+                <li>Coding</li>
+                <!-- Add more hobbies as needed -->
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects" class="fadeIn">
+        <div class="container">
+            <h2>Projects</h2>
+            <p>Check out some of my projects:</p>
+            <ul>
+                <li>DBLMAPIV2 (db legends python module)</li>
+                <li>Time-Rift utils</li>
+                <li>Stardew Valley Modding CLI</li>
+                <!-- Add more projects as needed -->
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="scaleIn">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Feel free to get in touch!</p>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name">
+                <input type="email" name="email" placeholder="Your Email">
+                <textarea name="message" placeholder="Your Message"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="youtube" class="slideInRight">
+        <div class="container">
+            <h2>dbl Archives (YouTube)</h2>
+            <p>Check out my YouTube channel:</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/UCktIhlbRhFYvI1cs7SSFN7g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Noah W. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
