@@ -5,20 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Noah W - Personal Website</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        /* Reset CSS */
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
             background-color: #1f1f1f;
             color: #fff;
-            overflow-x: hidden;
+            line-height: 1.6;
         }
 
         .container {
-            width: 80%;
+            max-width: 1200px;
             margin: 0 auto;
+            padding: 0 20px;
         }
 
+        /* Header */
         header {
             background-color: #333;
             padding: 20px 0;
@@ -29,7 +37,7 @@
 
         header h1 {
             margin: 0;
-            font-size: 24px;
+            font-size: 32px;
             color: #fff;
             text-align: center;
         }
@@ -57,40 +65,38 @@
             color: #ffd700;
         }
 
+        /* Sections */
         section {
-            padding: 50px 0;
-        }
-
-        #hero {
-            background-image: url('hero-image.jpg'); /* Add your hero image path here */
-            background-size: cover;
-            background-position: center;
+            padding: 100px 0;
             text-align: center;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
         }
 
-        #hero h2 {
+        h2 {
             font-size: 36px;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
         }
 
-        #hero p {
+        p {
             font-size: 18px;
+            margin-bottom: 30px;
         }
 
         ul {
             list-style-type: none;
+            padding: 0;
+            margin-bottom: 30px;
         }
 
+        li {
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
         footer {
             background-color: #333;
+            color: #fff;
             text-align: center;
-            padding: 20px 0;
-            position: relative;
+            padding: 30px 0;
             clear: both;
         }
 
@@ -122,19 +128,6 @@
         .slideInRight {
             animation: slideInRight 1s ease-in-out;
         }
-
-        @keyframes scaleIn {
-            from {
-                transform: scale(0);
-            }
-            to {
-                transform: scale(1);
-            }
-        }
-
-        .scaleIn {
-            animation: scaleIn 1s ease-in-out;
-        }
     </style>
 </head>
 <body>
@@ -162,7 +155,6 @@
     <section id="hobbies" class="slideInRight">
         <div class="container">
             <h2>Hobbies</h2>
-            <p>Here are some of my hobbies:</p>
             <ul>
                 <li>Gaming</li>
                 <li>Basketball</li>
@@ -175,7 +167,6 @@
     <section id="projects" class="fadeIn">
         <div class="container">
             <h2>Projects</h2>
-            <p>Check out some of my projects:</p>
             <ul>
                 <li>DBLMAPIV2 (db legends python module)</li>
                 <li>Time-Rift utils</li>
@@ -185,13 +176,13 @@
         </div>
     </section>
 
-    <section id="youtube" class="slideInRight">
-        <div class="container">
-            <h2>dbl Archives (YouTube)</h2>
-            <p>Check out my YouTube channel:</p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/shorts/K7z30sghFmU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-    </section>
+<section id="youtube" class="slideInRight">
+    <div class="container">
+        <h2>dbl Archives (YouTube)</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/UCktIhlbRhFYvI1cs7SSFN7g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</section>
+
 
     <footer>
         <div class="container">
